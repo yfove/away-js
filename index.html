@@ -10,20 +10,31 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
+     <!-- Animate on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 
 <body>
     <header class="wrapper">
         <div class="hero">
-            <h1>Choosing Your Key Swiches?</h1>
+            <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">Choosing Your Key Swiches?</h1>
+            <h2 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-delay="150">So you want to buy a <span  ><font color="orange">Mechanical</font></span > Keyboard? <br><br> Switches are one of the most important aspects of a mechanical keyboard. Getting to know which one's best for you can <font color="orange"><i>'transform' </i></font><i></i>  your typing experience.</h2>
         </div>
-        <h2>So you want to buy a Mechanical Keyboard? Key switches are one of the most important aspects of a mechanical keyboard. Getting to know which one's best for you can <i>tranform</i> your typing experience.</h2>
+        <div class="header-img">
+            <img src="assets/images/mxred.gif" alt="switch anatomy" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+        </div>
+        <figure class="arrowDown bounce">
+            <a href="#questions" class="header__scroll" aria-label="Link to questions">
+                <i class="fas fa-angle-down"></i>
+            </a>
+        </figure>
     </header>
+    
     <main class="wrapper">
         <div class="divider"></div>
         <form action="">
-            <div class="question-container">
+            <div class="question-container" id="questions">
                 <div class="question-left question1">
                     <h3>I want something  primarily for:</h3>
                     <div class="input-container">

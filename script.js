@@ -39,9 +39,15 @@ const resultSwitch = {
         image: "./assets/mxGreen.gif"
     },
 
+};
 
+$(document).ready(function(){
+    // Initiate smooth scroll
+    $('a').smoothScroll({
+        speed: 1000
+    });
 
+    // Initiate animate on scroll
+    AOS.init();
+});
 
-
-
-}
