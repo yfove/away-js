@@ -1,3 +1,4 @@
+//Set intial score counter to zero before user begins the questionnaire
 let intialScore = {
     mxRed: 0,
     mxBlue: 0,
@@ -37,6 +38,8 @@ const resultSwitch = {
         description: "The CHERRY MX Green is a slightly modified version of the blue switch. It is characterised by the same actuating characteristics, like an audible and tactile click, but the actuation force is higher with 80 centinewton. Because of this, the CHERRY MX Green is usually considered the perfect choice for the space bar on keyboards with MX Blue switches.",
         image: "./assets/mxGreen.gif"
     },
+
+
 
 
 
