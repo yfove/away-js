@@ -97,8 +97,8 @@ a {
 }
 
 .about-text h2{
-    -webkit-animation: bounce 3s;
-    animation: bounce 3s;
+    -webkit-animation: bounce 3s infinite;
+    animation: bounce 3s infinite;
 }
 
 .about-img img{
@@ -203,7 +203,7 @@ form input[type=radio]:checked + label {
     color: white;
     border: none;
     /* bottom: 10px; */
-    padding: 20px;
+    padding: 30px 40px;
     text-align: center;
     font-size: 20px;
     font-weight: bold;
@@ -395,8 +395,8 @@ footer {
     .btn-primary {
         position: static;
         bottom: -50px;
-        /* padding: 20px 20px; */
         font-size: 10px;
+        padding: 30px 30px;
     }
     
     .next {
