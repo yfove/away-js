@@ -97,6 +97,7 @@ a {
 }
 
 .about-text h2{
+    padding: 20px;
     -webkit-animation: bounce 3s infinite;
     animation: bounce 3s infinite;
 }
@@ -370,8 +371,13 @@ footer {
         margin: 5% 0;
     }
 
+    .about-text h2{
+        font-size: 20px ;
+        padding: 20px;
+    }
+
     .about-img img{
-        width: 40%;
+        width: 50%;
         position: static;
     }
 
@@ -433,6 +439,73 @@ footer {
         background: url("../assets/images/mxblack.png") left top no-repeat;
         background-size: 25px; 
         opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .hero h1{
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .hero h2{
+        font-size: 17px;
+        line-height: 30px;
+        padding: 20 0px
+    }
+
+    .about {
+        padding-top: 20px;
+    }
+
+    .about-text h1{
+        font-size: 20px;
+    }
+
+    .about-text h3{
+        font-size: 15px;
+    }
+    
+    .about-text h2{
+        font-size: 18px;
+        margin: 0;
+        padding: 40px 10px 0 0;
+    }
+
+    .question-container {
+       margin-top: 60px;
+    }
+
+    .question-container img{
+        margin-top: 50px;
+        width: 60%;
+    }
+
+    .submission {
+        margin: 0;
+        padding: 0;
+    }
+
+    .btn-primary {
+        margin: 20% 0;
+        padding: 60px 20px;
+        font-size: 15px;
+        text-transform: uppercase;
+        /* position: relative; */
+        top: 50px;
+        text-align: left;
+    }
+
+    .results img {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    results h2 {
+        margin: 0;
+        padding: 20%;
     }
 
 
