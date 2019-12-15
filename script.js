@@ -1,3 +1,11 @@
+// Initiate smooth scroll
+$('a').smoothScroll({
+    speed: 1000
+});
+
+// Initiate animate on scroll
+AOS.init();
+
 //Set intial score counter to zero before user begins the questionnaire
 let intialScore = {
     mxRed: 0,
@@ -41,15 +49,56 @@ const resultSwitch = {
 
 };
 
-$(document).ready(function(){
-    // Initiate smooth scroll
-    $('a').smoothScroll({
-        speed: 1000
-    });
+$(function(){
+    $('from').on('submit', function(e){
+        e.preventDefault();
+        $("html").animate({
+            scrollTop: $(".results").offset().top},
+            "slow");
+        // get and assign variables
+        const primary = Number($('input[name=question1]:checked').val());
+        const operating = Number($('input[name=question2]:checked').val());
+        const actuating = Number($('input[name=question3]:checked').val());
+        // add up total points
+        const answerTotalValues = primary + operating + actuating;
+        // log the total
+        console.log(answerTotalValues);
 
-    // Initiate animate on scroll
-    AOS.init();
+        $('.results').empty();
+        if (answerTotalValues >= 1 && answerTotalValues <= 4) {
+            $('.results').append(`<h2>${resultSwitch.mxRed.name}</h2>
+            <p>${resultSwitch.mxRed.description}</p>
+            <img src="${resultSwitch.mxRed.image}">
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=5 && answerTotalValues <=8) {
+            $('.results').append(`<h2>${resultSwitch.mxBlue.name}</h2>
+            <img src="${resultSwitch.mxBlue.image}">
+            <p>${resultSwitch.mxBlue.description}</p>
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=9 && answerTotalValues <=12) {
+            $('.results').append(`<h2>${resultSwitch.mxBrown.name}</h2>
+            <img src="${resultSwitch.mxBrown.image}">
+            <p>${resultSwitch.mxBrown.description}</p>
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=13 && answerTotalValues <=16) {
+            $('.results').append(`<h2>${resultSwitch.mxBlack.name}</h2>
+            <img src="${resultSwitch.mxBlack.image}">
+            <p>${resultSwitch.mxBlack.description}</p>
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=17 && answerTotalValues <=20) {
+            $('.results').append(`<h2>${resultSwitch.spaCat.name}</h2>
+            <img src="${resultSwitch.spaCat.image}">
+            <p>${resultSwitch.spaCat.description}</p>
+            <p>
+            </p>`);
+        };
 
-    
-});
+
+    })
+})
+
 

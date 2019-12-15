@@ -53,6 +53,11 @@ a {
     padding-top: 5%;
 }
 
+.hero h1{
+    -webkit-animation: bounce 2s ;
+    animation: bounce 2s ;
+}
+
 .wrapper {
 	background: rgb(237, 231, 222, .2);
 	max-width: 100%;
@@ -182,7 +187,10 @@ form input[type=radio] + label:hover {
 form input[type=radio]:checked + label {
     background: url("../assets/images/mxblack.png") left top no-repeat;
     background-size: 20px; 
+    opacity: 1;
 }
+
+
 
 .btn-primary {
     background-color: orange;
