@@ -508,6 +508,14 @@ footer {
         padding: 20%;
     }
 
+    .results p {
+        line-height: normal;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+        /* line-height: 1.2em; */
+    }
+
 
 }
 
