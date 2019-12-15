@@ -170,7 +170,7 @@ input[type=checkbox], input[type=radio] {
         visibility: hidden; }
 
 form input[type=radio] + label {
-    background: url("../assets/radio-button--unchecked.png") left top no-repeat;
+    background: url("../assets/images/radio-unchecked.png") left top no-repeat;
     padding-left: 30px;
     font-size: 20px;
     line-height: 2;
@@ -214,6 +214,50 @@ form input[type=radio]:checked + label {
     animation: bounce 3s infinite;
 }
 
+/* results */
 
+.results {
+    text-align: center;
+    width: 50%;
+    margin: 50px auto;
+    font-size: 1.6rem;
+}
+
+.results h2 {
+    font-family: 'Pacifico';
+    color: #341F20;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.results p {
+    line-height: normal;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    /* line-height: 1.2em; */
+}
+
+.results img {
+    border-radius: 20px;
+    position: static;
+    width: 90%;
+}
+
+footer {
+    text-align: center;
+    color: orange;
+    font-weight: 300;
+}
+
+@media (max-width: 660px) {
+    img {
+        position: static;
+        /* display: none; */
+
+    }
+
+}
 
 
