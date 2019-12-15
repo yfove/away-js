@@ -37,6 +37,11 @@ h1 {
     text-align: left;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header-img img {
     width: 25%;
     position: absolute;
@@ -88,14 +93,14 @@ h1 {
 .about-img img{
     width: 25%;
     position: absolute;
-    bottom: 110px;
-    right: 50px;
+    bottom: 70px;
+    right: 20px;
 }
 
 .about-img-small img{
     width: 15%;
     position: absolute;
-    bottom: 150px;
+    bottom: 140px;
     right: 170px;
 }
 
@@ -107,13 +112,18 @@ h1 {
 
 .about-text h2{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    font-size: 1.3em;
+    font-size: 1.5em;
     padding-top: 40px 0;
     margin-right: 30px;
-    text-align: right;
+    text-align: left;
     line-height: normal;
     color: orange;
 }
+
+.about-text h2:hover{
+    text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
+}
+
 
 .aboutArrow{
     position: relative;
@@ -122,6 +132,65 @@ h1 {
 
 /* Questionnaire */
 
+form img{
+    width: 20%;
+    position: relative;
+    bottom: 120px;
+    left: 200px;
+}
+
+/* checkbox */
+
+.next {
+    font-size: 20px;
+    margin-left: 5%;
+    color: orange;
+    text-transform: uppercase;
+}
+.question-container h3 {
+    color: orange;
+    font-size: 3em;
+    padding-left: 20px;
+}
+.question-left {
+    text-align: left;
+    font-weight: bold;
+}
+
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0; }
+
+    form input[type=radio] {
+        visibility: hidden; }
+
+form input[type=radio] + label {
+    background: url("../assets/radio-button--unchecked.png") left top no-repeat;
+    padding-left: 30px;
+    font-size: 20px;
+    line-height: 2;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+form input[type=radio] + label:hover {
+    color: orange;
+    text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
+}
+
+form input[type=radio]:checked + label {
+    background: url("../assets/images/mxblack.png") left top no-repeat;
+    background-size: 20px; 
+}
+
+.btn-primary {
+    background-color: orange;
+    position: absolute;
+    bottom: 10px;
+    padding: 30px;
+
+}
 
 /* animations */
 
