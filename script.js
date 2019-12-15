@@ -49,5 +49,7 @@ $(document).ready(function(){
 
     // Initiate animate on scroll
     AOS.init();
+
+    
 });
 
