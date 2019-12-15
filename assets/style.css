@@ -95,6 +95,11 @@ a {
     right: 100px;
 }
 
+.about-text h2{
+    -webkit-animation: bounce 3s;
+    animation: bounce 3s;
+}
+
 .about-img img{
     width: 17%;
     position: absolute;
@@ -343,6 +348,12 @@ footer {
     .about-text {
         margin: 4% 0%;
         position: static;
+        line-height: normal;
+    }
+
+    .about-text h3{
+        font-size: 1em;
+        margin: 5% 0;
     }
 
     .about-img img{
@@ -397,11 +408,6 @@ footer {
         background: url("../assets/images/mxblack.png") left top no-repeat;
         background-size: 25px; 
         opacity: 1;
-    }
-
-    .about-text h2{
-        -webkit-animation: bounce 2s ;
-        animation: bounce 2s ;
     }
 
 
