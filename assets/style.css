@@ -399,6 +399,11 @@ footer {
         opacity: 1;
     }
 
+    .about-text h2{
+        -webkit-animation: bounce 2s ;
+        animation: bounce 2s ;
+    }
+
 
 }
 
