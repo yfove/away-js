@@ -444,6 +444,13 @@ footer {
 
 @media (max-width: 600px) {
 
+
+    .arrowDown a {
+        font-size: 3.2em;
+        position: relative;
+        top: -5px;
+    }
+
     .hero h1{
         font-size: 30px;
         margin-bottom: 10px;
