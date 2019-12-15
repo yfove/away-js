@@ -59,7 +59,33 @@ $(function(){
         const answerTotalValues = primary + operating + actuating;
         // log the total
         console.log(answerTotalValues);
-        
+
+        $('.results').empty();
+        if (answerTotalValues >= 1 && answerTotalValues <= 3) {
+            $('.results').append(`<h2>${resultSwitch.mxBlue.name}</h2>
+            <p>${resultSwitch.mxBlue.description}</p>
+            <img src="${resultSwitch.mxBlue.image}">
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=4 && answerTotalValues <=7) {
+            $('.results').append(`<h2>${resultSwitch.mxBrown.name}</h2>
+            <img src="${resultSwitch.mxBrown.image}">
+            <p>${resultSwitch.mxBrown.description}</p>
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=8 && answerTotalValues <=11) {
+            $('.results').append(`<h2>${resultSwitch.mxBlack.name}</h2>
+            <img src="${resultSwitch.mxBlack.image}">
+            <p>${resultSwitch.mxBlack.description}</p>
+            <p>
+            </p>`);
+        } else if (answerTotalValues >=12 && answerTotalValues <=15) {
+            $('.results').append(`<h2>${resultSwitch.mxRed.name}</h2>
+            <img src="${resultSwitch.mxRed.image}">
+            <p>${resultSwitch.mxRed.description}</p>
+            <p>
+            </p>`);
+        };
     })
 })
 

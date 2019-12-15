@@ -62,7 +62,7 @@ a {
 	background: rgb(237, 231, 222, .2);
 	max-width: 100%;
 	margin: 4% 10%;
-	padding: 30px 30px 30px 30px;
+	padding: 5% 11%;
     position: relative;
     align-items: center;
     text-align: center;
@@ -110,7 +110,7 @@ a {
 }
 
 .about-text h1,h3 {
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
     margin-right: 30px;
 }
