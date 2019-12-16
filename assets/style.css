@@ -444,7 +444,6 @@ footer {
 
 @media (max-width: 600px) {
 
-
     .arrowDown a {
         font-size: 3.2em;
         position: relative;
@@ -484,7 +483,8 @@ footer {
     }
 
     .question-container img{
-        margin-top: 50px;
+        margin-top: 30px;
+        margin-bottom: 40px;
         width: 60%;
     }
 
