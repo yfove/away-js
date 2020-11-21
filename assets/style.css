@@ -2,12 +2,20 @@ html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}bo
 
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
 
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+* { 
+    -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+     }
 
 
 html {
     font-size: 60%;
-    font-family: "Noto Sans", sans-serif;
+    /* font-family: "Noto Sans", sans-serif; */
+    font-family: "Montserrat", sans-serif;
+
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
 
@@ -15,9 +23,8 @@ html {
 
 
 body {
-    font-family: "Noto Sans", sans-serif;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 2rem;
     line-height: 3.4rem;
     color: #000;
 }
@@ -31,7 +38,6 @@ h2 {
 
 h1 {
     font-family: "Montserrat", sans-serif;
-    font-weight: 300;
     font-size: 2.5rem;
     letter-spacing: 4px;
     text-align: left;
@@ -40,6 +46,10 @@ h1 {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.header {
+    height: 100vh;
 }
 
 .header-img img {
@@ -60,8 +70,8 @@ a {
 
 .wrapper {
 	background: rgb(237, 231, 222, .2);
-	max-width: 100%;
-	margin: 4% 10%;
+    max-width: 100%;
+    margin: 10%;
 	padding: 5% 11%;
     position: relative;
     align-items: center;
@@ -97,9 +107,10 @@ a {
 }
 
 .about-text h2{
-    padding: 20px;
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
+    font-size: 2rem;
+    padding: px;
+    -webkit-animation: bounce 4s;
+    animation: bounce 4s;
 }
 
 .about-img img{
@@ -117,14 +128,13 @@ a {
 }
 
 .about-text h1,h3 {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: left;
     margin-right: 30px;
 }
 
 .about-text h2{
     /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    font-size: 1.5em;
     padding-top: 40px 0;
     margin-right: 30px;
     text-align: left;
