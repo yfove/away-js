@@ -406,10 +406,34 @@ footer {
   }
 
   @media (max-width: 600px) {
+    html {
+      background-color: rgba(251, 215, 161);
+    }
+    .wrapper {
+      margin: 10px;
+    }
+
+    .submission {
+      padding: 0;
+      background-color: orange;
+    }
+
+    .submission button {
+      font-size: 1.2rem;
+    }
+
+    .submission button:hover {
+      color: orangered;
+    }
+
+    .divider {
+      display: none;
+    }
+
     .arrowDown a {
-      font-size: 3.2em;
+      font-size: 2em;
       position: relative;
-      top: -5px;
+      top: -10px;
     }
 
     .hero h1 {
