@@ -1,540 +1,468 @@
-html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
-
-.clearfix:after {visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
-
-* { 
-    -moz-box-sizing: border-box;
-     -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-     }
-
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 html {
-    font-size: 60%;
-    /* font-family: "Noto Sans", sans-serif; */
-    font-family: "Montserrat", sans-serif;
-
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
-
 
 body {
-    font-weight: 400;
-    font-size: 2rem;
-    line-height: 3.4rem;
-    color: #000;
-}
-
-h1,
-h2 {
-    text-transform: none;
-    margin: 0;
-    padding: 10px 0x;
-}
-
-h1 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.5rem;
-    letter-spacing: 4px;
-    text-align: left;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.header {
-    height: 100vh;
-}
-
-.header-img img {
-    width: 25%;
-    position: absolute;
-    bottom: 90px;
-    right: 60px;
-}
-
-.question-container {
-    padding-top: 5%;
-}
-
-.hero h1{
-    -webkit-animation: bounce 2s ;
-    animation: bounce 2s ;
+  font-size: 1.2rem;
 }
 
 .wrapper {
-	background: rgb(237, 231, 222, .2);
-    max-width: 100%;
-    margin: 10%;
-	padding: 5% 11%;
-    position: relative;
-    align-items: center;
-    text-align: center;
+  height: 100vh;
+  margin: 8%;
+  background: rgba(251, 215, 161, 0.5);
+  max-width: 100%;
+  padding: 5% 11%;
+  position: relative;
+  align-items: center;
+  text-align: center;
 }
 
-.wrapper .hero{
-    text-align: left;
-    margin: 30px 20%;
-    position: relative;
-    right: 120px;
+h1 {
+  color: orangered;
+  font-size: 3rem;
+  line-height: normal;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.header-img img {
+  width: 35%;
+  position: relative;
+}
+
+.about-img-small img {
+  padding-top: 50px;
+  max-height: 30%;
+  max-width: 30%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.question-container {
+  padding-top: 5%;
+}
+
+.hero h1 {
+  -webkit-animation: bounce 2s;
+  animation: bounce 2s;
+}
+
+.wrapper .hero {
+  text-align: left;
+  margin: 50px 20%;
+  position: relative;
+  right: 120px;
 }
 
 .arrowDown a {
-    font-size: 3em;
-    color: orange;
-    text-decoration: none;
-    position: relative;
-    top: 30px;
+  font-size: 3em;
+  color: orange;
+  text-decoration: none;
+  position: relative;
+  top: 30px;
 }
 
 .arrowDown a:hover {
-    color: grey;
+  color: grey;
 }
 
 /* About */
 
 .about-text {
-    margin: 4% 20%;
-    position: relative;
-    right: 100px;
-
+  text-align: left;
 }
 
-.about-text h2{
-    font-size: 2rem;
-    padding: px;
-    -webkit-animation: bounce 4s;
-    animation: bounce 4s;
+.about-text h1 {
+  padding: 30px 0;
 }
 
-.about-img img{
-    width: 17%;
-    position: absolute;
-    bottom: 70px;
-    right: 20px;
+.about-text a {
+  font-size: 2rem;
+  color: orange;
+  font-weight: bold;
 }
 
-.about-img-small img{
-    width: 15%;
-    position: absolute;
-    bottom: 140px;
-    right: 170px;
+.about-text p {
+  font-size: 1.7rem;
+  padding-bottom: 40px;
 }
 
-.about-text h1,h3 {
-    font-size: 1rem;
-    text-align: left;
-    margin-right: 30px;
+.about-text h2:hover {
+  text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
 }
 
-.about-text h2{
-    /* font-family: Georgia, 'Times New Roman', Times, serif; */
-    padding-top: 40px 0;
-    margin-right: 30px;
-    text-align: left;
-    line-height: normal;
-    color: orange;
-}
-
-.about-text h2:hover{
-    text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
-}
-
-
-.aboutArrow{
-    position: relative;
-    bottom: 30px;
-}
+/* .aboutArrow {
+  position: relative;
+  bottom: 30px;
+} */
 
 /* Questionnaire */
 
-form img{
-    width: 20%;
-    position: relative;
-    bottom: 120px;
-    left: 200px;
+form img {
+  width: 30%;
+  position: relative;
+  bottom: 90px;
+  left: 200px;
 }
 
 /* checkbox */
 
 .next {
-    font-size: 20px;
-    margin-left: 5%;
-    color: orange;
-    text-transform: uppercase;
+  font-size: 1.6rem;
+  margin-left: 4%;
+  color: orangered;
+  text-transform: uppercase;
 }
 .question-container h3 {
-    color: orange;
-    font-size: 3em;
-    padding-left: 20px;
+  color: orange;
+  font-size: 3em;
+  padding-left: 20px;
+  line-height: 110%;
+  padding-bottom: 50px;
 }
 .question-left {
-    text-align: left;
-    font-weight: bold;
+  text-align: left;
+  font-weight: bold;
 }
 
-input[type=checkbox], input[type=radio] {
-    box-sizing: border-box;
-    padding: 0; }
-
-    form input[type=radio] {
-        visibility: hidden; }
-
-form input[type=radio] + label {
-    background: url("../assets/images/radio-unchecked.png") left top no-repeat;
-    padding-left: 30px;
-    font-size: 20px;
-    line-height: 2;
-    border-bottom: 3px solid transparent;
-    position: relative;
-    text-align: left;
-    letter-spacing: 0.5px;
-}
-form input[type=radio] + label:hover {
-    color: orange;
-    text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
 }
 
-form input[type=radio]:checked + label {
-    background: url("../assets/images/mxblack.png") left top no-repeat;
-    background-size: 20px; 
-    opacity: 1;
+form input[type="radio"] {
+  visibility: hidden;
 }
 
+form input[type="radio"] + label {
+  background: url("../assets/images/radio-unchecked.png") left top no-repeat;
+  padding-left: 30px;
+  font-size: 1.6rem;
+  line-height: 2;
+  border-bottom: 3px solid transparent;
+  position: relative;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+form input[type="radio"] + label:hover {
+  color: orange;
+  text-shadow: 0 0 18px rgba(66, 65, 65, 0.31);
+}
 
+form input[type="radio"]:checked + label {
+  background: url("../assets/images/mxblack.png") left top no-repeat;
+  background-size: 20px;
+  opacity: 1;
+}
 
 .btn-primary {
-    background-color: orange;
-    color: white;
-    border: none;
-    /* bottom: 10px; */
-    padding: 30px 40px;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    /* border-radius: 20px; */
-    position: relative;
-    bottom: 70px;
+  background-color: orange;
+  color: white;
+  border: none;
+  /* bottom: 10px; */
+  padding: 10%;
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 
 /* animations */
 
 /* bounce for arrow */
 .bounce {
-    -webkit-animation: bounce 3s infinite;
-    animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
 }
 
 /* results */
 
 .results {
-    text-align: center;
-    width: 50%;
-    margin: 50px auto;
-    font-size: 1.6rem;
+  padding: 50px;
+  text-align: center;
+  font-size: 1.6rem;
 }
 
 .results h2 {
-    font-family: 'Pacifico';
-    color: #341F20;
-    font-size: 3rem;
-    text-align: center;
-    padding-top: 35px;
+  font-family: "Pacifico";
+  color: #341f20;
+  font-size: 3rem;
+  text-align: center;
+  padding-top: 35px;
 }
 
 .results p {
-    line-height: normal;
-    text-align: center;
-    font-size: 20px;
-    font-weight: bold;
-    /* line-height: 1.2em; */
+  line-height: normal;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  /* line-height: 1.2em; */
 }
 
 .results img {
-    border-radius: 20px;
-    position: static;
-    width: 90%;
+  border-radius: 20px;
+  position: static;
+  width: 50%;
 }
 
 footer {
-    text-align: center;
-    color: orange;
-    font-weight: 300;
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  font-weight: 300;
+  padding: 30px;
+}
+
+.credits {
+  text-align: center;
 }
 
 @media (max-width: 1050px) {
-    
-    /* .wrapper {
+  p {
+    font-size: large;
+  }
+  /* .wrapper {
         width: 80%;
     } */
 
-    .header-img img {
-        width: 35%;
-    }
-    
-    .about-img img{
-        width: 25%;
-        position: absolute;
-        bottom: 90px;
-        right: 20px;
-    }
+  .header-img img {
+    width: 35%;
+  }
 
-    .about-text h3{
-        font-size-adjust: .8em;
-        line-height: normal;
-    }
-    
-    .about-img-small img{
-        width: 15%;
-        position: absolute;
-        bottom: 160px;
-        right: 170px;
-    }
+  .about-text h3 {
+    font-size-adjust: 0.8em;
+    line-height: normal;
+  }
 
-    form img{
-        width: 30%;
-        position: relative;
-        bottom: 70px;
-        left: 230px;
-    }
-
+  form img {
+    width: 30%;
+    position: relative;
+    bottom: 70px;
+    left: 230px;
+  }
 }
 
 @media (max-width: 800px) {
+  html img {
+    position: static;
+    /* display: none; */
+  }
 
-    html img{
-        position: static;
-        /* display: none; */
-    }
+  form img {
+    padding-bottom: 20px;
+    width: 50%;
+    height: auto;
+    /* display: none; */
+  }
 
-    form img{
-        padding-top: 20px;
+  form input[type="radio"] + label {
+    background: url("../assets/images/radio-unchecked.png") left top no-repeat;
+    padding-left: 30px;
+    font-size: 15px;
+    line-height: 2;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
 
-    }
-
-    form input[type=radio] + label {
-        background: url("../assets/images/radio-unchecked.png") left top no-repeat;
-        padding-left: 30px;
-        font-size: 15px;
-        line-height: 2;
-        border-bottom: 3px solid transparent;
-        position: relative;
-        text-align: left;
-        letter-spacing: 0.5px;
-    }
-
-    .btn-primary {
-        background-color: orange;
-        color: white;
-        border: none;
-        bottom: 10px;
-        font-size: 15px;
-        /* border-radius: 20px; */
-        position: relative;
-        bottom: -20px;
-    }
-
+  .btn-primary {
+  padding: none;
 }
 
 @media (max-width: 600px) {
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
 
-    html,body {
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 0px;
-    }
+  form {
+    overflow: hidden;
+  }
 
-    form{
-        overflow: hidden;
-    }
+  .header-img img {
+    width: 60%;
+    position: static;
+    right: 30px;
+    bottom: 40px;
+  }
+  
+  .question-container img {
+    width: 80%;
+  }
 
-    .header-img img{
-        width: 60%;
-        position: static;
-        right: 30px;
-        bottom: 40px;
-    }
+  .wrapper .hero {
+    text-align: left;
+    margin: 30px 00%;
+    position: relative;
+    right: 0px;
+  }
 
-    .wrapper .hero{
-        text-align: left;
-        margin: 30px 00%;
-        position: relative;
-        right: 0px;
-    }
+  .about-text {
+    margin: 4% 0%;
+    line-height: normal;
+    right: 0;
+  }
 
-    .about-text {
-        margin: 4% 0%;
-        position: static;
-        line-height: normal;
-        right: 0;
-    }
+  .about-text h3 {
+    font-size: 1em;
+    margin: 5% 0;
+  }
 
-    .about-text h3{
-        font-size: 1em;
-        margin: 5% 0;
-    }
+  .about-text h2 {
+    font-size: 20px;
+    padding: 20px;
+  }
 
-    .about-text h2{
-        font-size: 20px ;
-        padding: 20px;
-    }
+  form input[type="radio"] + label {
+    background: url("../assets/images/radio-unchecked.png") left top no-repeat;
+    padding-left: 40px;
+    font-size: 10px;
+    line-height: 2;
+    border-bottom: 3px solid transparent;
+    position: relative;
+    text-align: left;
+    letter-spacing: 0.5px;
+  }
 
-    .about-img img{
-        width: 50%;
-        position: static;
-    }
+  .next {
+    position: relative;
+    top: 20px;
+  }
 
-    .about-img-small img{
-        display: none;
-        position: absolute;
-        right: 70px;
-        width: 20%;
-    }
-    form input[type=radio] + label {
-        background: url("../assets/images/radio-unchecked.png") left top no-repeat;
-        padding-left: 40px;
-        font-size: 10px;
-        line-height: 2;
-        border-bottom: 3px solid transparent;
-        position: relative;
-        text-align: left;
-        letter-spacing: 0.5px;
-    }
-
-    .btn-primary {
-        position: static;
-        bottom: -50px;
-        font-size: 10px;
-        padding: 30px 30px;
-    }
-    
-    .next {
-        position: relative;
-        top: 20px;
-    }
-
-    .question-left {
+  .question-left {
     text-align: left;
     font-weight: bold;
     margin: 10px 0;
-    }
+  }
 
-    .question-left h3{
-        padding: 0;
-        margin: 20px 0;
-        font-size: 2em;
-        }
+  .question-left h3 {
+    padding: 0;
+    margin: 20px 0;
+    font-size: 2em;
+  }
 
-    form input[type=radio] + label {
-        background: url("../assets/images/radio-unchecked.png") left top no-repeat;
-        padding-left: 30px;
-        font-size: 12px;
-        line-height: 20px;
-        border-bottom: 3px solid transparent;
-        /* position: relative; */
-        text-align: left;
-        letter-spacing: 0.5px;
-        margin-bottom: 5px;
-        display: block;
-    }
-    
-    form input[type=radio]:checked + label {
-        background: url("../assets/images/mxblack.png") left top no-repeat;
-        background-size: 25px; 
-        opacity: 1;
-    }
+  form input[type="radio"] + label {
+    background: url("../assets/images/radio-unchecked.png") left top no-repeat;
+    padding-left: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    border-bottom: 3px solid transparent;
+    /* position: relative; */
+    text-align: left;
+    letter-spacing: 0.5px;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  form input[type="radio"]:checked + label {
+    background: url("../assets/images/mxblack.png") left top no-repeat;
+    background-size: 25px;
+    opacity: 1;
+  }
 }
 
 @media (max-width: 600px) {
+  .arrowDown a {
+    font-size: 3.2em;
+    position: relative;
+    top: -5px;
+  }
 
-    .arrowDown a {
-        font-size: 3.2em;
-        position: relative;
-        top: -5px;
-    }
+  .hero h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .hero h2 {
+    font-size: 17px;
+    line-height: 30px;
+    padding: 20 0px;
+  }
 
-    .hero h1{
-        font-size: 30px;
-        margin-bottom: 10px;
-    }
-    .hero h2{
-        font-size: 17px;
-        line-height: 30px;
-        padding: 20 0px
-    }
+  .about {
+    padding-top: 20px;
+  }
 
-    .about {
-        padding-top: 20px;
-    }
+  .about-text h1 {
+    font-size: 20px;
+  }
 
-    .about-text h1{
-        font-size: 20px;
-    }
+  .about-text h3 {
+    font-size: 15px;
+  }
 
-    .about-text h3{
-        font-size: 15px;
-    }
-    
-    .about-text h2{
-        font-size: 18px;
-        margin: 0;
-        padding: 40px 10px 0 0;
-    }
+  .about-text h2 {
+    font-size: 18px;
+    margin: 0;
+    padding: 40px 10px 0 0;
+  }
 
-    .question-container {
-       margin-top: 60px;
-    }
+  .question-container {
+    margin-top: 60px;
+  }
 
-    .question-container img{
-        margin-top: 30px;
-        margin-bottom: 40px;
-        width: 60%;
-    }
+  .question-container img {
 
-    .submission {
-        margin: 0;
-        padding: 0;
-    }
+    width: 30%;
+  }
 
-    .btn-primary {
-        margin: 20% 0;
-        padding: 60px 20px;
-        font-size: 15px;
-        text-transform: uppercase;
-        /* position: relative; */
-        top: 50px;
-        text-align: left;
-    }
+  .submission .wrapper{
+      padding-top: 10%;
+     
+  }
 
-    .results img {
-        padding: 0;
-        margin: 0;
-        text-align: center;
-        width: 100%;
-    }
+  .results img {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+  }
 
-    results h2 {
-        margin: 0;
-        padding: 20%;
-    }
+  .results h2 {
+    margin: 0;
+    line-height: 100%;
+    font-size: 2rem;
+    text-align: center;
+  }
 
-    .results p {
-        line-height: normal;
-        text-align: center;
-        font-size: 15px;
-        font-weight: bold;
-        /* line-height: 1.2em; */
-    }
+  .results p {
+    line-height: normal;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+    /* line-height: 1.2em; */
+  }
 
-
+  .about-text p {
+    font-size: 1rem;
+  }
+  .about-text a {
+    font-size: 1rem;
+  }
 }
-
-
-
