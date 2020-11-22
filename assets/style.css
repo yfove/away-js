@@ -17,7 +17,7 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
+  height: 80vh;
   margin: 8%;
   background: rgba(251, 215, 161, 0.5);
   max-width: 100%;
@@ -264,6 +264,16 @@ footer {
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    height: 100vh;
+    margin: 8%;
+    background: rgba(251, 215, 161, 0.5);
+    max-width: 100%;
+    padding: 5% 11%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
   html img {
     position: static;
     /* display: none; */
