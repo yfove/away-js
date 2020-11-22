@@ -176,6 +176,7 @@ form input[type="radio"]:checked + label {
 }
 
 .btn-primary {
+  margin-top: 40px;
   background-color: orange;
   color: white;
   border: none;
