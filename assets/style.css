@@ -27,6 +27,16 @@ body {
   text-align: center;
 }
 
+.submission {
+  margin: 10%;
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 100%;
+  padding: 5% 11%;
+  position: relative;
+  align-items: center;
+  text-align: center;
+}
+
 h1 {
   color: orangered;
   font-size: 3rem;
@@ -187,7 +197,6 @@ form input[type="radio"]:checked + label {
   border-radius: 20px;
   /* border-radius: 20px; */
 }
-
 /* animations */
 
 /* bounce for arrow */
@@ -223,7 +232,7 @@ form input[type="radio"]:checked + label {
 .results img {
   border-radius: 20px;
   position: static;
-  width: 50%;
+  width: 35%;
 }
 
 footer {
@@ -265,7 +274,7 @@ footer {
 
 @media (max-width: 800px) {
   .wrapper {
-    height: 100vh;
+    height: 80vh;
     margin: 8%;
     background: rgba(251, 215, 161, 0.5);
     max-width: 100%;
@@ -298,7 +307,7 @@ footer {
   }
 
   .btn-primary {
-    padding: none;
+    padding: 30%;
   }
 
   @media (max-width: 600px) {
