@@ -13,50 +13,53 @@ html {
 }
 
 body {
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .wrapper {
-  height: 80vh;
-  margin: 8%;
-  background: rgba(251, 215, 161, 0.5);
+  height: 100vh;
+  margin: 0%;
+  background: rgba(251, 215, 161);
   max-width: 100%;
-  padding: 5% 11%;
+  padding: 5% 14%;
   position: relative;
   align-items: center;
   text-align: center;
 }
 
-.submission {
+/* .submission {
   margin: 10%;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(251, 215, 161);
   max-width: 100%;
-  padding: 5% 11%;
+  padding:;
   position: relative;
   align-items: center;
   text-align: center;
-}
+} */
 
 h1 {
   color: orangered;
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: normal;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .header-img img {
-  width: 35%;
-  position: relative;
+  width: 25%;
+  position: absolute;
+  top: 180px;
+  right: 130px;
 }
 
 .about-img-small img {
-  padding-top: 50px;
+  padding-top: 0px;
   max-height: 30%;
-  max-width: 30%;
+  max-width: 15%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -84,7 +87,7 @@ a {
 }
 
 .arrowDown a {
-  font-size: 3em;
+  font-size: 2.5em;
   color: orange;
   text-decoration: none;
   position: relative;
@@ -106,13 +109,13 @@ a {
 }
 
 .about-text a {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: orange;
   font-weight: bold;
 }
 
 .about-text p {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding-bottom: 40px;
 }
 
@@ -128,10 +131,10 @@ a {
 /* Questionnaire */
 
 form img {
-  width: 30%;
+  width: 20%;
   position: relative;
-  bottom: 90px;
-  left: 200px;
+  bottom: 180px;
+  left: 260px;
 }
 
 /* checkbox */
@@ -190,11 +193,11 @@ form input[type="radio"]:checked + label {
   color: white;
   border: none;
   /* bottom: 10px; */
-  padding: 10%;
+  padding: 17%;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 30px;
   /* border-radius: 20px; */
 }
 /* animations */
@@ -216,15 +219,14 @@ form input[type="radio"]:checked + label {
 .results h2 {
   font-family: "Pacifico";
   color: #341f20;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: center;
-  padding-top: 35px;
 }
 
 .results p {
   line-height: normal;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-weight: bold;
   /* line-height: 1.2em; */
 }
@@ -232,7 +234,7 @@ form input[type="radio"]:checked + label {
 .results img {
   border-radius: 20px;
   position: static;
-  width: 35%;
+  width: 30%;
 }
 
 footer {
@@ -248,41 +250,30 @@ footer {
 }
 
 @media (max-width: 1050px) {
-  p {
-    font-size: large;
-  }
-  /* .wrapper {
-        width: 80%;
-    } */
 
-  .header-img img {
-    width: 35%;
-  }
+.about p {
+    font-size: 1.2rem;
+}
 
-  .about-text h3 {
-    font-size-adjust: 0.8em;
-    line-height: normal;
-  }
+.about img {
+    display: none;
+}
+
+.questions h3 {
+    font-size: 1.0rem;
+}
+
 
   form img {
-    width: 30%;
+    width: 20%;
     position: relative;
-    bottom: 70px;
-    left: 230px;
+    bottom: 100px;
+    left: 260px;
   }
 }
 
 @media (max-width: 800px) {
-  .wrapper {
-    height: 80vh;
-    margin: 8%;
-    background: rgba(251, 215, 161, 0.5);
-    max-width: 100%;
-    padding: 5% 11%;
-    position: relative;
-    align-items: center;
-    text-align: center;
-  }
+
   html img {
     position: static;
     /* display: none; */
@@ -292,7 +283,8 @@ footer {
     padding-bottom: 20px;
     width: 50%;
     height: auto;
-    /* display: none; */
+
+    display: none;
   }
 
   form input[type="radio"] + label {
@@ -409,14 +401,7 @@ footer {
     html {
       background-color: rgba(251, 215, 161);
     }
-    .wrapper {
-      margin: 10px;
-    }
-
-    .submission {
-      padding: 0;
-      background-color: orange;
-    }
+ 
 
     .submission button {
       font-size: 1.2rem;
@@ -464,16 +449,24 @@ footer {
       padding: 40px 10px 0 0;
     }
 
+    .about img {
+        display: flex;
+        width: 599px;
+    }
+
     .question-container {
       margin-top: 60px;
     }
 
     .question-container img {
       width: 30%;
+      display: block;
+      align-items: center;
+      padding-top: 50px;
     }
 
-    .submission .wrapper {
-      padding-top: 10%;
+    .question img {
+
     }
 
     .results img {
@@ -481,6 +474,7 @@ footer {
       margin: 0;
       text-align: center;
       width: 100%;
+      display: flex;
     }
 
     .results h2 {
