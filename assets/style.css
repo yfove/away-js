@@ -39,20 +39,20 @@ body {
 
 h1 {
   color: orangered;
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   line-height: normal;
-  padding-top: 50px;
+  padding-top: 10px;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: normal;
 }
 
 p {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 
 .header-img img {
@@ -66,7 +66,7 @@ p {
   padding-top: 0px;
   max-height: 30%;
   max-width: 15%;
-  display: block;
+  display: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -97,7 +97,7 @@ a {
   color: orange;
   text-decoration: none;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 
 .arrowDown a:hover {
