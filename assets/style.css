@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-size: 1rem;
+  font-size: 1.15rem;
 }
 
 .wrapper {
@@ -56,7 +56,7 @@ p {
 }
 
 .header-img img {
-  width: 25%;
+  width: 23%;
   position: absolute;
   top: 180px;
   right: 130px;
@@ -115,13 +115,13 @@ a {
 }
 
 .about-text a {
-  font-size: 1.5rem;
+  font-size: 1.9rem;
   color: orange;
   font-weight: bold;
 }
 
 .about-text p {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   padding-bottom: 40px;
 }
 
